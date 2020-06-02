@@ -10,6 +10,9 @@ $(document).ready(function() {
   });
 
   $(".jumbotron").click(function() {
-    $(this).after("<img src='img/walrus.jpeg' alt='Surprise Walrus!'>");
+    $(this).after("<img src='img/walrus.jpeg' alt='Surprise Walrus!' class='walrus'>");
+    $(".walrus:first-of-type").click(function() {
+      $(this).remove();
+    });
   });
 });
